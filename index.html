@@ -18,7 +18,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
-    <title>Barber Shop</title>
+    <link rel="stylesheet" href="/assets/css/costum.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/datepicker.js">
+    <title>Barber Shop 2023</title>
   </head>
   <body class="text-gray-800 antialiased">
     <!-- NAVIGATION BAR -->
@@ -37,7 +39,7 @@
               class="text-md font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white mt-2"
               style="color: #c6c3bc"
               href="#"
-              >Barber Shop 1965</a
+              >Barber Shop back to 1970</a
             >
           </div>
           <button
@@ -108,7 +110,7 @@
       >
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
-          style="background-image: url('/assets/img/507.png')"
+          style="background-image: url('assets/img/barber\ ben.jpeg')"
         >
           <span
             id="blackOverlay"
@@ -123,9 +125,9 @@
                   class="text-white font-semibold text-4xl mt-12"
                   style="color: #c6c3bc"
                 >
-                  BACK TO mid-50s
+                  BACK TO mid-70s
                 </h1>
-                <p class="mt-4 text-lg text-gray-300" style="color: #c6c3bc">
+                <p class="mt-4 text-lg text-white-300" style="color: #c6c3bc">
                   At Barbershop 2023, based in Bottrop, quality, impeccable
                   service and a "warm" environment meet tradition!
                 </p>
@@ -140,14 +142,83 @@
                       class="text-gray-500 fas fa-phone mr-4"
                       style="color: #543335"
                     ></i
-                    >+491632077833</a
-                  >
-                </h2>
-                <p class="mt-4 text-lg text-gray-300" style="color: #c6c3bc">
-                  Monday 10:30 - 15:00<br />
-                  Tuesday to Friday 09:00 - 20:30 <br />
-                  Saturday 10:00 - 16:00
-                </p>
+                     div class="container mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="text-2xl py-4 px-6 bg-gray-900 text-white text-center font-bold uppercase">
+                        Book an Appointment
+                    </div>
+                    <form class="py-4 px-6" action="" method="POST">
+                        <div class="mb-4">
+                            <label class="block text-white-300 font-bold mb-1" for="name">
+                                Name
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="name" type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-white-700 font-bold mb-2" for="email">
+                                Email
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="email" type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-white-700 font-bold mb-2" for="phone">
+                                Phone Number
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="phone" type="tel" placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-white-700 font-bold mb-2" for="date">
+                                Date
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="date" type="date" placeholder="Select a date">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-white-700 font-bold mb-2" for="time">
+                                Time
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="time" type="time" placeholder="Select a time">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-white-700 font-bold mb-2" for="service">
+                                Service
+                            </label>
+                            <select
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="haircut">Haircut</option>
+                                <option value="coloring">Coloring</option>
+                                <option value="styling">Styling</option>
+                                <option value="facial">Facial</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-white-700 font-bold mb-2" for="message">
+                                Message
+                            </label>
+                            <textarea
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="message" rows="4" placeholder="Enter any additional information"></textarea>
+                        </div>
+                        <div class="flex items-center justify-center mb-4">
+                            <button
+                                class="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline"
+                                type="submit">
+                                
+                            </button>
+                        </div>
+                
+                    </form>
+                </div>
               </div>
             </div>
           </div>
@@ -186,7 +257,7 @@
                   With a rich history...
                 </h3>
                 <p class="mt-4 text-lg leading-relaxed" style="color: #252a32">
-                  . we backing to the mid-50s, the barber shop Barbershop 2018,
+                  . we backing to the mid-70s, the barber shop Barbershop 2018,
                   based in Bottrop, provides with consistency and continuity of
                   relevant services.
                 </p>
@@ -234,7 +305,7 @@
                       </div>
                       <div>
                         <h4 style="color: #252a32">
-                          With the signature of Zinou
+                          With the signature of Zinou and midou 
                         </h4>
                       </div>
                     </div>
@@ -587,63 +658,20 @@
                 </a>
               </div>
               <div class="flex inline-block mt-2" style="color: #252a32">
-                zinou ,Midou
+                 Or Call here
                 <a
                   href="tel:+302310271970"
                   aria-label="Connect to phone app +491632077833"
                   >+491632077833</a
                 >
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="my-6 border-gray-400" />
-        <div
-          class="flex flex-wrap items-center md:justify-between justify-center"
-        >
-          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div class="text-sm text-gray-600 font-semibold py-1">
-              <!-- component -->
-                <div class="w-full h-full">
-                  <div class="absolute bottom-10 right-0 mr-8 mb-32">
-                    <div
-                      class="bg-white rounded-lg shadow-md px-4 py-2 border-1 border-gray-400"
-                    >
-                      or you can wtite our support?
-                      <svg
-                        class="inline w-6"
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 512 512"
-                        style="enable-background: new 0 0 512 512"
-                        xml:space="preserve"
-                      >
-                        <path
-                          style="fill: #1b4145"
-                          d="M337.455,133.897C433.857,133.897,512,195.96,512,272.518c0,54.665-39.846,101.933-97.729,124.502
-	c-4.038,26.225,3.938,53.969,23.951,74.174c-38.413,0-70.869-25.645-81.546-60.893c-6.313,0.549-12.724,0.84-19.221,0.84
-	c-96.396,0-174.545-62.064-174.545-138.622C162.909,195.96,241.06,133.897,337.455,133.897z"
-                        />
-                        <path
-                          style="fill: #ffd24d"
-                          d="M174.545,40.806C78.143,40.806,0,102.87,0,179.427c0,54.665,39.846,101.933,97.729,124.502
-	c4.038,26.225-3.938,53.969-23.951,74.174c38.413,0,70.869-25.645,81.546-60.893c6.313,0.549,12.724,0.84,19.221,0.84
-	c96.396,0,174.545-62.064,174.545-138.622C349.091,102.87,270.94,40.806,174.545,40.806z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
+            
+</div>
+              
                 </div>
               </div>
               Copyright © 2023 Barber Shop classic.
             </div>
-          </div>
-        </div>
-      </div>
+        
     </footer>
   </body>
 </html>
